@@ -1,0 +1,5 @@
+flask
+pillow
+pdf2image
+pytesseract
+reportlab
