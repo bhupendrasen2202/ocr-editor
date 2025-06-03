@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OCR PDF/Image Editor</title>
+</head>
+<body>
+    <h1>Upload PDF or Image</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".pdf,.png,.jpg,.jpeg" required>
+        <button type="submit">Upload & Extract Text</button>
+    </form>
+    {% if extracted_text %}
+        <h2>Extracted Text:</h2>
+        <textarea rows="20" cols="100">{{ extracted_text }}</textarea>
+    {% endif %}
+</body>
+</html>
